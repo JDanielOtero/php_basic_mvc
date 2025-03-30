@@ -15,7 +15,15 @@
             </tr>
         </thead>
         <tbody>
-            
+            <?php
+                foreach($usuarios as $user){
+                    echo "<tr>";
+                    echo "<td>".$user['username']."</td>";
+                    echo "<td>".$user['password']."</td>";
+                    echo "<td>".$user['nombre']."</td>";
+                    echo "</tr>";
+                }
+            ?>
         </tbody>
     </table>
 </body>
